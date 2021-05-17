@@ -46,7 +46,9 @@ void NEO6_ReceiveUartChar(NEO6_State *GpsStateHandler)
 
 	if( TempHead == GpsStateHandler->UartBufferTail) // No room for new data
 	{
-		GpsStateHandler->UartBufferHead = GpsStateHandler->UartBufferTail;
+		//
+		// Error handle?
+		//
 	}
 	else
 	{
